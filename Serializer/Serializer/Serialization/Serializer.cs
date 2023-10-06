@@ -190,28 +190,28 @@ namespace Assets.Serialization
             switch (o)
             {
                 case null:
-                    throw new NotImplementedException("Fill me in");
+                    Writer.WriteLine("null");
                     break;
 
                 case int i:
-                    throw new NotImplementedException("Fill me in");
+                    Writer.WriteLine(i.ToString());
                     break;
 
                 case float f:
-                    throw new NotImplementedException("Fill me in");
+                    Writer.WriteLine(f.ToString());
                     break;
 
                 // Not: don't worry about handling strings that contain quote marks
                 case string s:
-                    throw new NotImplementedException("Fill me in");
+                    Writer.WriteLine("\""+s+"\"");
                     break;
 
                 case bool b:
-                    throw new NotImplementedException("Fill me in");
+                    Writer.WriteLine(b.ToString());
                     break;
 
                 case IList list:
-                    throw new NotImplementedException("Fill me in");
+                    WriteList(list);
                     break;
 
                 default:
@@ -231,7 +231,29 @@ namespace Assets.Serialization
         /// <param name="o">Object to serialize</param>
         private void WriteComplexObject(object o)
         {
-            throw new NotImplementedException("Fill me in");
+            (int id, bool isNew) = GetId(o);
+            Writer.WriteLine("#{0}", id);
+            if (isNew)
+            {
+                IEnumerable<KeyValuePair<string, object>> keyValuePairs = Utilities.SerializedFields(o);
+                WriteBracketedExpression(
+                    "{ ",
+                    () =>
+                    {
+                        var firstItem = true;
+                         Writer.WriteLine("type: \"" + o.GetType().Name + "\",");
+                        foreach (KeyValuePair<string, object> kvp in keyValuePairs)
+                        {
+                            if (firstItem)
+                                firstItem = false;
+                            else
+                                Write(", ");
+                            Writer.WriteLine("{0}: ", kvp.Key);
+                            WriteObject(kvp.Value);
+                        }
+                    },
+                    " }");
+            }
         }
     }
 }

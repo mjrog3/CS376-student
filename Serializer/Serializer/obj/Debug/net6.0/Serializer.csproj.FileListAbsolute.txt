@@ -1,0 +1,12 @@
+/Users/maxrogal/Documents/GitHub/CS376-student/Serializer/Serializer/bin/Debug/net6.0/Serializer.deps.json
+/Users/maxrogal/Documents/GitHub/CS376-student/Serializer/Serializer/bin/Debug/net6.0/Serializer.dll
+/Users/maxrogal/Documents/GitHub/CS376-student/Serializer/Serializer/bin/Debug/net6.0/Serializer.pdb
+/Users/maxrogal/Documents/GitHub/CS376-student/Serializer/Serializer/obj/Debug/net6.0/Serializer.csproj.AssemblyReference.cache
+/Users/maxrogal/Documents/GitHub/CS376-student/Serializer/Serializer/obj/Debug/net6.0/Serializer.GeneratedMSBuildEditorConfig.editorconfig
+/Users/maxrogal/Documents/GitHub/CS376-student/Serializer/Serializer/obj/Debug/net6.0/Serializer.AssemblyInfoInputs.cache
+/Users/maxrogal/Documents/GitHub/CS376-student/Serializer/Serializer/obj/Debug/net6.0/Serializer.AssemblyInfo.cs
+/Users/maxrogal/Documents/GitHub/CS376-student/Serializer/Serializer/obj/Debug/net6.0/Serializer.csproj.CoreCompileInputs.cache
+/Users/maxrogal/Documents/GitHub/CS376-student/Serializer/Serializer/obj/Debug/net6.0/Serializer.dll
+/Users/maxrogal/Documents/GitHub/CS376-student/Serializer/Serializer/obj/Debug/net6.0/refint/Serializer.dll
+/Users/maxrogal/Documents/GitHub/CS376-student/Serializer/Serializer/obj/Debug/net6.0/Serializer.pdb
+/Users/maxrogal/Documents/GitHub/CS376-student/Serializer/Serializer/obj/Debug/net6.0/ref/Serializer.dll
