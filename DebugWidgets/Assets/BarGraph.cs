@@ -39,7 +39,7 @@ public class BarGraph : MonoBehaviour
     /// </summary>
     public float Max = 1;
 
-    // True if we're allowing negative values for this bar graph
+    // True if we're allong negative values for this bar graph
     private bool signedDisplay;
     
     // Start is called before the first frame update
@@ -47,7 +47,7 @@ public class BarGraph : MonoBehaviour
     void Start()
     {
         // TODO: Set the text to the name of this game object
-        
+        Text = this.Text;
         
         // This sets width to the width of the widget on screen
         var rectTransform = (RectTransform)transform;
